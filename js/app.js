@@ -16,7 +16,7 @@ function renderHome() {
 
   // Aggiorna info numero
   document.getElementById('numero-info').innerHTML =
-    `Vol. I — N° ${numero.numero}<br>${numero.mese} ${numero.anno}<br>€6,90`;
+    `Anno I — N° ${numero.numero}<br>${numero.mese} ${numero.anno}<br>Gratis<br>Frequenza Randomica`;
 
   // Colonne laterali — articoli 2, 3 (indici 1,2)
   const colLeft = document.getElementById('col-left');
