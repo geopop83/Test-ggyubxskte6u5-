@@ -18,7 +18,7 @@ function renderHome() {
   document.getElementById('numero-info').innerHTML =
     `Anno I — N° ${numero.numero}<br>${numero.mese} ${numero.anno}<br>Frequenza Randomica<br>Gratis`;
 
-  // Colonne laterali — articoli 2, 3 (indici 1,2)
+  // Colonne laterali — articoli 1, 2 (indici 1,2)
   const colLeft = document.getElementById('col-left');
   colLeft.innerHTML = '';
   [numero.articoli[1], numero.articoli[2]].forEach(a => {
