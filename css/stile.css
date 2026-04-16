@@ -68,12 +68,7 @@ body::before {
   font-size: clamp(2.5rem, 7vw, 5rem);
 }
 
-.ombra-pop {
-  position: relative;
-  display: inline-block;
-}
-
-.ombra-pop::after {
+.logo-pop::after {
   content: 'POPlitica'; 
   font-family: 'Oswald', sans-serif;
   position: absolute;
@@ -81,7 +76,6 @@ body::before {
   top: 3px;
   color: var(--cyan);
   z-index: -1;
-  font-size: inherit;
 }
 
 .logo-sub {
