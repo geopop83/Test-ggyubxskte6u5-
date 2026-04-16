@@ -69,7 +69,7 @@ body::before {
 }
 
 .logo-pop::after {
-  content: 'POPlitica'; 
+  content: 'POPlitica';
   font-family: 'Oswald', sans-serif;
   position: absolute;
   left: 3px;
@@ -79,8 +79,6 @@ body::before {
 }
 
 .logo-sub {
-  display: block;
-  margin-top: 10px;
   font-family: 'Space Mono', monospace;
   font-size: 9px;
   letter-spacing: 0.3em;
