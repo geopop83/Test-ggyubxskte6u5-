@@ -65,7 +65,7 @@ body::before {
   color: var(--red);
   position: relative;
   display: inline-block;
-  font-size: clamp(3rem, 8.5vw, 6rem);
+  font-size: clamp(2.5rem, 7vw, 5rem);
 }
 
 .logo-pop::after {
