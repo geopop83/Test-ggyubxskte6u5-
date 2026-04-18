@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo-POPlitica — N°1 Aprile 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f0e8;--ink:#0a0a0a;--accent:#e8232a;--gold:#d4a017;--cyan:#00b4d8;--pink:#ff3fa4;--cream:#f5f0e8;--border:rgba(10,10,10,0.15)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Space Mono',monospace;overflow-x:hidden;cursor:crosshair}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:0.6}
+
+.masthead{border-bottom:3px solid var(--ink);padding:10px 32px;display:flex;justify-content:space-between;align-items:center;background:var(--bg);position:sticky;top:0;z-index:100}
+.issue-info{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;line-height:1.8}
+.freq-label{display:inline}
+.freq-label br{display:none}.archive-badge{display:inline-block;background:var(--accent);color:white;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;padding:3px 8px;margin-top:4px}
+.logo{text-align:center;flex:1;cursor:pointer}
+.logo-main{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,7vw,5rem);letter-spacing:0.06em;line-height:0.9;display:block}
+.logo-geo{color:var(--ink)}
+.logo-litica{color:var(--ink)}
+.logo-pop{color:var(--accent);position:relative;display:inline-block}
+.logo-pop::after{content:'POP';font-family:'Bebas Neue',sans-serif;position:absolute;left:3px;top:3px;color:var(--cyan);z-index:-1;letter-spacing:0.06em}
+.logo-sub{font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink);opacity:0.6}
+.nav-right{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;text-align:right;line-height:2.2}
+.nav-right a{display:block;color:var(--ink);text-decoration:none;transition:color 0.2s}
+.nav-right a:hover{color:var(--accent)}
+
+/* 3B FIX: bottone visibile rosso con testo sempre bianco */
+.btn-numero-attuale{display:inline-block;background:var(--accent);color:white;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;padding:6px 14px;text-decoration:none;transition:background 0.2s;border:none}
+.btn-numero-attuale:hover{background:#b01020;color:white}
+
+.ticker-wrap{background:var(--accent);color:white;overflow:hidden;padding:6px 0;border-bottom:2px solid var(--ink)}
+.ticker{display:flex;white-space:nowrap;animation:ticker 30s linear infinite;font-size:11px;letter-spacing:0.2em;text-transform:uppercase}
+.ticker span{padding:0 40px}
+.ticker span::after{content:'◆';margin-left:40px;color:var(--gold)}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.tag{font-size:8px;letter-spacing:0.25em;text-transform:uppercase;background:var(--ink);color:var(--cream);padding:2px 6px;display:inline-block;margin-bottom:4px}
+.tag.red{background:var(--accent);color:white}
+.tag.gold{background:var(--gold);color:#0a0a0a}
+.tag.cyan{background:var(--cyan);color:#0a0a0a}
+.tag-sub{font-size:8px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5}
+
+#page-home{display:block}
+#page-articolo{display:none}
+
+.hero{display:grid;grid-template-columns:1fr 2.5fr 1fr;border-bottom:3px solid var(--ink);min-height:70vh}
+.col-left{border-right:2px solid var(--ink);padding:24px 20px;display:flex;flex-direction:column;gap:20px}
+.cercasi-box{border:1px solid var(--gold);padding:16px;cursor:pointer;background:rgba(212,160,23,0.04);transition:background 0.2s}
+.cercasi-box:hover{background:rgba(212,160,23,0.10)}
+.cercasi-box h3{font-family:'Playfair Display',serif;font-size:1rem;line-height:1.3;margin:8px 0;font-weight:700}
+.cercasi-box p{font-size:10px;line-height:1.7;opacity:0.7}
+.col-center{border-right:2px solid var(--ink);display:flex;flex-direction:column;overflow:hidden}
+
+/* Cover text cliccabile */
+.cover-text{padding:24px 28px;background:var(--bg);border-top:3px solid var(--ink);cursor:pointer;transition:background 0.2s}
+.cover-text:hover{background:#ede8df}
+.cover-visual{flex:1;position:relative;background:#0a0a0a;display:flex;align-items:center;justify-content:center;min-height:420px;overflow:hidden}
+
+.globe-container{position:relative;width:300px;height:300px}
+.globe{width:300px;height:300px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#1a6b8a,#0a2a3a 60%,#000810);position:relative;box-shadow:inset -30px -20px 60px rgba(0,0,0,0.8),inset 15px 10px 40px rgba(0,180,216,0.15),0 0 60px rgba(0,180,216,0.3);overflow:hidden;animation:globeRotate 20s linear infinite}
+@keyframes globeRotate{0%,100%{box-shadow:inset -30px -20px 60px rgba(0,0,0,0.8),inset 15px 10px 40px rgba(0,180,216,0.15),0 0 60px rgba(0,180,216,0.3)}50%{box-shadow:inset -20px -30px 60px rgba(0,0,0,0.8),inset 25px 5px 40px rgba(0,180,216,0.2),0 0 80px rgba(0,180,216,0.4)}}
+.globe::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 18px,rgba(0,180,216,0.08) 18px,rgba(0,180,216,0.08) 19px),repeating-linear-gradient(90deg,transparent,transparent 18px,rgba(0,180,216,0.06) 18px,rgba(0,180,216,0.06) 19px);border-radius:50%}
+.globe::after{content:'';position:absolute;top:8%;left:15%;width:35%;height:20%;background:rgba(100,200,100,0.6);border-radius:60% 40% 50% 40%/50% 60% 40% 60%;filter:blur(3px);box-shadow:60px 40px 0 rgba(100,180,80,0.5),-10px 60px 0 rgba(150,180,100,0.4),80px 80px 0 rgba(80,160,60,0.3)}
+.globe-ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotateX(75deg);width:360px;height:360px;border-radius:50%;border:2px solid rgba(212,160,23,0.4);box-shadow:0 0 20px rgba(212,160,23,0.2)}
+.globe-ring-2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotateX(75deg) rotateZ(30deg);width:380px;height:380px;border-radius:50%;border:1px solid rgba(255,63,164,0.3)}
+.pop-el{position:absolute;font-family:'Bebas Neue',sans-serif;animation:float 6s ease-in-out infinite}
+.pop-el:nth-child(1){top:12%;right:8%;font-size:3.5rem;color:var(--accent);opacity:0.9}
+.pop-el:nth-child(2){bottom:18%;left:6%;font-size:1.2rem;color:var(--gold);border:2px solid var(--gold);padding:4px 10px;animation-delay:-2s;letter-spacing:0.1em}
+.pop-el:nth-child(3){top:55%;right:5%;font-size:1rem;color:#00b4d8;animation-delay:-4s;letter-spacing:0.2em}
+.pop-el:nth-child(4){top:8%;left:5%;font-size:0.8rem;color:#ff3fa4;font-family:'Space Mono',monospace;animation-delay:-1s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+.cover-kicker{font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;font-weight:bold}
+.cover-headline{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.8rem);line-height:1.1;font-weight:700;margin-bottom:14px}
+.cover-headline em{font-style:italic;color:var(--accent)}
+.cover-desc{font-size:11px;line-height:1.9;opacity:0.65;max-width:460px;border-left:3px solid var(--accent);padding-left:14px}
+.cover-hint{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);width:fit-content;margin-top:8px;display:block;cursor:pointer}
+
+.col-right{padding:24px 20px;display:flex;flex-direction:column;gap:20px}
+.stat-block{text-align:center;border:1px solid var(--ink);padding:16px 10px;position:relative}
+.stat-block::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--accent);line-height:1;display:block}
+.stat-label{font-size:8px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.6;margin-top:4px;line-height:1.5}
+.pullquote{background:var(--ink);color:var(--cream);padding:18px 16px;position:relative}
+.pullquote::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--accent);position:absolute;top:-10px;left:10px;line-height:1}
+.pullquote p{font-family:'Playfair Display',serif;font-style:italic;font-size:0.9rem;line-height:1.6;padding-top:24px}
+.pullquote cite{display:block;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5;margin-top:10px;font-style:normal}
+
+.sections-bar{display:flex;border-bottom:3px solid var(--ink);overflow-x:auto}
+.section-tab{flex:1;min-width:100px;padding:12px 16px;text-align:center;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;border-right:1px solid var(--ink);cursor:pointer;transition:background 0.2s,color 0.2s;color:var(--ink)}
+.section-tab:last-child{border-right:none}
+.section-tab:hover{background:var(--ink);color:var(--cream)}
+.section-tab.active{background:var(--accent);color:white}
+
+.card-grid{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:3px solid var(--ink)}
+.card{border-right:1px solid var(--ink);padding:24px 20px;display:flex;flex-direction:column;gap:10px;cursor:pointer;overflow:hidden;transition:background 0.3s,color 0.3s;color:var(--ink)}
+.card:hover{background:var(--ink);color:var(--cream)}
+.card:last-child{border-right:none}
+.card-icon{font-size:2.5rem;line-height:1}
+.card-tags{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card h3{font-family:'Playfair Display',serif;font-size:0.95rem;line-height:1.3;font-weight:700}
+.card p{font-size:10px;line-height:1.8;opacity:0.65;flex:1}
+.card-link{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:inherit;border-bottom:1px solid currentColor;width:fit-content}
+.card-autore{font-size:9px;opacity:0.55;color:inherit}
+
+/* Empty state */
+.empty-state{padding:32px 24px;text-align:center;border:1px dashed var(--border);color:var(--ink);opacity:0.5;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;grid-column:1/-1}
+
+/* MANIFESTO — solo strong è bold */
+.manifesto{padding:48px 40px;display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:start;border-bottom:3px solid var(--ink);background:#0a0a0a;color:#f5f0e8}
+.manifesto-label{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,7rem);line-height:0.85;color:var(--accent)}
+.manifesto-text{font-family:'Playfair Display',serif;font-size:clamp(0.9rem,1.3vw,1.1rem);line-height:1.9;border-left:3px solid var(--gold);padding-left:24px;color:#f5f0e8;font-weight:400 !important;font-style:normal !important}
+.manifesto-text *{font-weight:400 !important;font-style:normal !important}
+.manifesto-text strong{font-weight:700 !important;font-style:normal !important}
+.manifesto-text em{font-style:italic !important;font-weight:400 !important}
+.manifesto-text s{text-decoration:line-through;opacity:0.7}
+.manifesto-text p{margin-bottom:16px}
+.manifesto-text p:last-child{margin-bottom:0}
+
+.articolo-wrap{max-width:780px;margin:0 auto;padding:48px 40px}
+.articolo-back{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);cursor:pointer;display:inline-flex;align-items:center;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--accent);padding-bottom:4px}
+.articolo-back:hover{opacity:0.7}
+.articolo-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.articolo-paese-label{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;opacity:0.5}
+.articolo-titolo{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;font-weight:700;margin-bottom:24px}
+.articolo-titolo em{font-style:italic;color:var(--accent)}
+.articolo-divider{border:none;border-top:3px solid var(--ink);margin-bottom:32px}
+.articolo-body{font-family:'Playfair Display',serif;font-size:1.1rem;line-height:1.9}
+.articolo-body p{margin-bottom:20px}
+.articolo-body em{font-style:italic;color:var(--accent)}
+.articolo-body strong{font-weight:700}
+.firma-label{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.5}
+.btn-link{display:inline-block;background:var(--accent);color:white;padding:12px 24px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;margin-top:8px;transition:background 0.2s}
+.btn-link:hover{background:var(--ink)}
+
+footer{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding:40px;border-top:3px solid var(--ink);background:var(--bg)}
+footer h4{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;margin-bottom:12px;letter-spacing:0.05em}
+footer p,footer li{font-size:10px;line-height:2;opacity:0.6;list-style:none}
+footer a{color:inherit;text-decoration:none}
+footer a:hover{color:var(--accent)}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:12px;display:block;cursor:pointer;letter-spacing:0.06em;color:var(--ink)}
+.footer-pop{color:var(--accent);display:inline-block;text-shadow:2px 2px 0 var(--cyan)}
+.footer-social-icon{color:#0a0a0a;opacity:0.55;display:flex;align-items:center;text-decoration:none;transition:color 0.2s,opacity 0.2s}
+.footer-social-icon:hover{color:var(--accent);opacity:1}
+/* mobile-pullquote: hidden on desktop */
+.mobile-pullquote{display:none}
+.copyright{border-top:1px solid var(--border);margin-top:32px;padding-top:16px;font-size:9px;letter-spacing:0.15em;opacity:0.4;text-transform:uppercase}
+
+/* ── HAMBURGER (mobile) ── */
+.nav-hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px;background:none;border:none}
+.nav-hamburger span{display:block;width:20px;height:2px;background:var(--ink)}
+.nav-mobile-menu{display:none;position:absolute;top:100%;right:0;background:var(--bg);border:2px solid var(--ink);border-top:none;z-index:200;min-width:180px}
+.nav-mobile-menu a{display:block;padding:10px 16px;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(0,0,0,0.1)}
+.nav-mobile-menu a:last-child{border-bottom:none}
+.nav-mobile-menu a:hover{color:var(--accent)}
+.nav-mobile-menu.open{display:block}
+.masthead{position:relative}
+
+@keyframes slideIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.page-enter{animation:slideIn 0.4s ease both}
+
+@media(max-width:900px){
+  .masthead{padding:8px 16px}
+  .issue-info{font-size:8px;line-height:1.6}
+  .logo-sub{font-size:7px;letter-spacing:0.2em}
+  .nav-right{display:none}
+  .nav-hamburger{display:flex}
+  .freq-label{display:block}
+  .freq-label br{display:block}
+  .hero{display:flex;flex-direction:column;min-height:auto}
+  .col-center{order:1;border-right:none}
+  .col-center .cover-text{border-bottom:2px solid var(--ink)}
+  .col-left{order:2;display:block;border-right:none;border-bottom:2px solid var(--ink);padding:0;gap:0}
+  .col-right{order:3;display:flex;flex-direction:row;flex-wrap:wrap;border-top:1px solid rgba(0,0,0,0.1);padding:0;gap:0;border-bottom:2px solid var(--ink)}
+  .col-right .stat-block{flex:1 0 40%;border:none;border-right:1px solid rgba(0,0,0,0.1);padding:10px 8px}
+  .col-right .stat-block:last-of-type{border-right:none}
+  .col-right .stat-num{font-size:2rem}
+  .col-right .stat-label{font-size:7px}
+  .col-right .pullquote{display:none}
+  /* 4: mobile pullquote between cards and manifesto */
+  .mobile-pullquote{
+    display:block;
+    background:#0a0a0a;
+    color:#f5f0e8;
+    padding:20px 20px 16px;
+    position:relative;
+    border-bottom:3px solid var(--ink)
+  }
+  .mobile-pullquote::before{content:'"';font-family:'Playfair Display',serif;font-size:4rem;color:var(--accent);position:absolute;top:-8px;left:12px;line-height:1}
+  .mobile-pullquote p{font-family:'Playfair Display',serif;font-style:italic;font-size:0.95rem;line-height:1.6;padding-top:20px;color:#f5f0e8}
+  .mobile-pullquote cite{display:block;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.45;margin-top:8px;font-style:normal;color:#f5f0e8}
+  .cover-hint{margin-top:6px}
+  .cercasi-box{margin:12px;width:calc(100% - 24px)}
+  .sections-bar{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .sections-bar::-webkit-scrollbar{display:none}
+  .section-tab{flex:0 0 auto;padding:10px 12px;font-size:9px}
+  .card-grid{grid-template-columns:repeat(2,1fr);border-bottom:3px solid var(--ink)}
+  .card{padding:12px;gap:8px;min-height:160px;border-bottom:1px solid rgba(0,0,0,0.1);border-right:1px solid rgba(0,0,0,0.1)}
+  .card:nth-child(even){border-right:none}
+  .card:last-child{border-bottom:none}
+  .card:nth-last-child(2):nth-child(odd){border-bottom:none}
+  .card h3{font-size:0.85rem}
+  .card p{font-size:9px}
+  footer{grid-template-columns:1fr 1fr;padding:24px 16px;gap:16px}
+  footer>div:first-child{grid-column:1/-1}
+  footer>div:last-child{grid-column:1/-1}
+  .manifesto{grid-template-columns:1fr;padding:28px 20px;gap:16px}
+  .manifesto-label{font-size:3rem;margin-bottom:0}
+  .manifesto-text{font-size:0.8rem}
+  .articolo-wrap{padding:24px 16px}
+}
+/* ── REPORTAGE ── */
+.art-occhiello{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.7;font-style:italic;opacity:0.65;margin-bottom:28px;border-left:3px solid var(--accent);padding-left:16px}
+.r-section-title{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:var(--accent);margin:32px 0 14px;border-bottom:1px solid rgba(232,35,42,0.25);padding-bottom:6px;clear:both}
+.reportage p{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.9;color:var(--ink);margin-bottom:20px}
+.r-foto-placeholder{width:100%;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;padding:12px;min-height:180px}
+.r-fp-scuro{background:#1a1a1a;color:rgba(245,240,232,0.25)}
+.r-fp-caldo{background:#3d2010;color:rgba(245,240,232,0.25)}
+.r-fp-cielo{background:#0a2a3d;color:rgba(245,240,232,0.25)}
+.r-fp-verde{background:#0a1f0a;color:rgba(245,240,232,0.25)}
+.r-fp-grigio{background:#1f1f1f;color:rgba(245,240,232,0.25)}
+.r-foto-caption{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.1em;opacity:0.4;padding:5px 0;border-top:1px solid rgba(0,0,0,0.1);margin-bottom:20px}
+.r-foto-dx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin:24px 0}
+.r-foto-sx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin:24px 0}
+.r-testo{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.9;color:var(--ink)}
+.r-testo p{margin-bottom:16px}
+.r-foto-col{}
+.r-foto-doppia{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.r-foto-feature{margin:32px 0;position:relative;overflow:hidden}
+.r-foto-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(10,10,10,0.88),transparent);padding:24px 20px 16px}
+.r-overlay-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#f5f0e8;margin-bottom:5px}
+.r-overlay-caption{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:8px;color:rgba(245,240,232,0.45);letter-spacing:0.1em}
+.r-nota-margine{float:right;width:200px;margin:0 0 20px 28px;border-left:3px solid var(--gold);padding-left:12px;clear:right}
+.r-nota-label{font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px}
+.r-nota-margine p{font-family:'Space Mono',monospace !important;font-size:9px !important;line-height:1.7;opacity:0.55;margin-bottom:0 !important}
+.r-pullquote{margin:32px 0;padding:24px 28px;background:var(--ink);color:var(--cream);position:relative;clear:both}
+.r-pullquote::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--accent);position:absolute;top:-12px;left:14px;line-height:1}
+.r-pullquote p{font-family:'Playfair Display',serif !important;font-style:italic;font-size:1.1rem !important;line-height:1.7;padding-top:24px;color:var(--cream) !important;margin-bottom:0 !important}
+.r-pullquote cite{display:block;font-family:'Space Mono',monospace;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.4;margin-top:10px;font-style:normal}
+@media(max-width:700px){
+  .r-foto-dx,.r-foto-sx,.r-foto-doppia{grid-template-columns:1fr}
+  .r-nota-margine{float:none;width:100%;margin:0 0 16px 0}
+  .r-foto-sx .r-foto-col{order:-1}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="issue-info">
+    Anno I — N°1<br>Aprile 2026<br><span class="freq-label">Frequenza <br class="freq-br">Randomica</span><br>Gratis<br>
+    <span class="archive-badge">Archivio</span>
+  </div>
+  <div class="logo" onclick="window.location.href='../../index.html'">
+    <span class="logo-main"><span class="logo-geo">GEO-</span><span class="logo-pop">POP</span><span class="logo-litica">LITICA</span></span>
+    <span class="logo-sub">Culture · Identità Umane · Estetiche · Visioni dal Mondo</span>
+  </div>
+  <nav class="nav-right">
+    <a href="../../index.html" class="btn-numero-attuale">Vai al numero attuale →</a>
+  </nav>
+  <button class="nav-hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-mobile-menu">
+    <a href="../../index.html" class="btn-numero-attuale" style="margin:10px 16px;display:inline-block">Vai al numero attuale →</a>
+  </div>
+</header>
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>Arte come resistenza</span><span>La moda di Teheran dopo le sanzioni</span><span>K-Pop e diplomazia coreana</span><span>Il calcio come soft power</span><span>I ponti culturali tra i check point</span>
+    <span>Arte come resistenza</span><span>La moda di Teheran dopo le sanzioni</span><span>K-Pop e diplomazia coreana</span><span>Il calcio come soft power</span><span>I ponti culturali tra i check point</span>
+  </div>
+</div>
+
+<div id="page-home" class="pagina">
+  <main class="hero">
+    <aside class="col-left">
+      <div class="cercasi-box" onclick="apriArticolo('cercasi-collaboratori')">
+        <span class="tag gold">Redazione</span>
+        <h3>A.A.A. Cercasi Persone da ogni "check point"</h3>
+        <p>Geo-POPlitica è un progetto aperto. Cerchiamo scrittori, fotografi, grafici, viaggiatori — chiunque abbia qualcosa da raccontare.</p>
+      </div>
+    </aside>
+
+    <section class="col-center">
+      <div class="cover-visual">
+        <div class="globe-container">
+          <div class="globe"></div><div class="globe-ring"></div><div class="globe-ring-2"></div>
+        </div>
+        <div class="pop-el">POP!</div>
+        <div class="pop-el">BREAKING</div>
+        <div class="pop-el">TREND →</div>
+        <div class="pop-el">Num.01</div>
+      </div>
+      <!-- Cover text cliccabile apre l'editoriale -->
+      <div class="cover-text" onclick="apriArticolo('n1-editoriale')">
+        <div class="cover-kicker">◆ Copertina — Numero Uno</div>
+        <h1 class="cover-headline">Il mondo non è mai stato così <em>complicato.</em><br>Né così interessante.</h1>
+        <p class="cover-desc">Il nostro scopo è quello di mostrare la vasta gamma di sfumature del mondo alla luce degli eventi moderni - i ponti culturali tra i check point. Il tutto in una salsa "POPlitica" che ci contraddistingue.</p>
+        <p class="cover-hint">Leggi →</p>
+      </div>
+    </section>
+
+    <aside class="col-right">
+      <div class="stat-block"><span class="stat-num">6</span><span class="stat-label">Paesi in<br>questo numero</span></div>
+      <div class="stat-block"><span class="stat-num" style="color:var(--cyan)">6</span><span class="stat-label">Articoli<br>pubblicati</span></div>
+      <div class="pullquote">
+        <p>Lungo i confini, dritti al centro dell'umano.</p>
+        <cite>— La Redazione</cite>
+      </div>
+    </aside>
+  </main>
+
+  <nav class="sections-bar">
+    <div class="section-tab active" id="tab-tutti"     onclick="filtra('Tutti',this)">🌍 Tutti</div>
+    <div class="section-tab"        id="tab-culture"   onclick="filtra('Culture',this)">🎭 Culture</div>
+    <div class="section-tab"        id="tab-estetiche" onclick="filtra('Estetiche',this)">✦ Estetiche</div>
+    <div class="section-tab"        id="tab-identita"  onclick="filtra('Identità Umane',this)">👤 Identità Umane</div>
+    <div class="section-tab"        id="tab-visioni"   onclick="filtra('Visioni',this)">🌐 Visioni</div>
+  </nav>
+
+  <section class="card-grid" id="card-grid"></section>
+
+  <div class="mobile-pullquote">
+    <p>Lungo i confini, dritti al centro dell'umano.</p>
+    <cite>— La Redazione</cite>
+  </div>
+
+  <section class="manifesto">
+    <div class="manifesto-label">Il nostro<br>mani&shy;festo</div>
+    <div class="manifesto-text">
+      <p><strong>Oltre la mappa dei poteri:</strong> Non guardiamo ai confini come linee di divisione, ma come punti di osservazione. Non ci occupiamo di cronaca dei conflitti, ma di <em>checkpoint</em> culturali.</p>
+      <p><strong><s>Soft</s> Solo Power:</strong> Agli Stati la seduzione strategica, a noi l'eros della scoperta. Uno sguardo attento e curioso sui colpi di genio e i destini comuni: che sia un film d'autore o un mero trend globale, è lì che le persone si riconoscono e si incontrano.</p>
+      <p><strong>Il dato an/altropologico:</strong> Non cerchiamo nei popoli <em>il motore della forza</em>; ci appassiona l'energia creativa, la radice comune e le sue ramificazioni.</p>
+      <p><strong>La Geo-POPlitica è POP!</strong> Popolare, appartiene ai popoli. È <em>naïf</em>, <em>d'essai</em>, talvolta clandestina. Vogliamo farla emergere, celebrarla.</p>
+    </div>
+  </section>
+</div>
+
+<div id="page-articolo" class="pagina" style="display:none;">
+  <div class="articolo-wrap" id="articolo-contenuto"></div>
+</div>
+
+<footer>
+  <div>
+    <span class="footer-logo" onclick="window.location.href='../../index.html'">GEO-<span class="footer-pop">POP</span>LITICA</span>
+    <p>La prima rivista abbonata alle persone.</p>
+    <div style="display:flex;gap:14px;margin:12px 0 10px">
+      <a href="https://instagram.com/geopoplitica" target="_blank" class="footer-social-icon" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://open.spotify.com/user/geopoplitica" target="_blank" class="footer-social-icon" aria-label="Spotify">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M8 15.5c2.5-1 5.5-1 8 0" stroke-linecap="round"/><path d="M7 12c3-1.2 6.5-1.2 10 0" stroke-linecap="round"/><path d="M6.5 8.5c3.5-1.5 7.5-1.5 11 0" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+    <p style="margin-top:4px;">← <a href="../../index.html">Vai al numero attuale</a></p>
+    <p style="margin-top:8px;">
+      <a href="../../index.html?pagina=cookie">Cookie Policy</a> ·
+      <a href="../../index.html?pagina=privacy">Privacy Policy</a>
+    </p>
+  </div>
+  <div>
+    <h4>Aree</h4>
+    <ul>
+      <li><a href="../../index.html?archivio=Culture">🎭 Culture</a></li>
+      <li><a href="../../index.html?archivio=Estetiche">✦ Estetiche</a></li>
+      <li><a href="../../index.html?archivio=Identità Umane">👤 Identità Umane</a></li>
+      <li><a href="../../index.html?archivio=Visioni">🌐 Visioni</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Info</h4>
+    <ul>
+      <li><a href="../../index.html?archivio=chisiamo">Chi Siamo</a></li>
+      <li><a href="../../index.html?archivio=persone">Persone</a></li>
+      <li><a href="../../index.html?archivio=tutti">Archivio</a></li>
+      <li><a href="../../index.html?archivio=contatti">Contatti</a></li>
+    </ul>
+  </div>
+  <div class="copyright" style="grid-column:1/-1">
+    © 2026 Geo-POPlitica — Archivio N°1 — www.geo-poplitica.com
+  </div>
+</footer>
+
+<script>
+const ARTICOLI_N1 = [
+  {
+    id:'n1-editoriale', paese:'🌍 Ovunque', categoria:'Redazione', sottocategoria:'Editoriale', autore:'La Redazione',
+    titolo:'Il mondo non è mai stato così complicato. Né così interessante.',
+    anteprima:'Il nostro scopo è quello di mostrare la vasta gamma di sfumature del mondo alla luce degli eventi moderni — i ponti culturali tra i check point. Benvenuti nel numero uno.',
+    testo:`<p>Il mondo non è mai stato così complicato. Né così interessante.</p><p>Partiamo da questa contraddizione — e ne facciamo la nostra bussola. Geo-POPlitica nasce per chi vuole capire il mondo senza smettere di viverlo.</p><p>Il nostro scopo è mostrare la vasta gamma di sfumature del mondo alla luce degli eventi moderni — i ponti culturali tra i check point. Non prendiamo posizione sui conflitti. Usiamo gli eventi come fonte di luce per far emergere la creatività dei popoli, la loro bellezza, la loro irriducibile umanità.</p><p><em>La Redazione</em></p>`
+  },
+  {
+    id:'cercasi-collaboratori', paese:'🌍 Ovunque', categoria:'Redazione', sottocategoria:'Annunci', autore:'La Redazione',
+    titolo:'A.A.A. Cercasi Persone da ogni "check point"',
+    anteprima:'Geo-POPlitica è un progetto aperto. Cerchiamo scrittori, fotografi, grafici, viaggiatori — chiunque abbia qualcosa da raccontare da un angolo del mondo.',
+    testo:`<p>Geo-POPlitica nasce come progetto collettivo. Non abbiamo una redazione nel senso tradizionale — abbiamo una rete di persone curiose, sparse in giro per il mondo, che hanno qualcosa da raccontare.</p><p>Non è necessario essere giornalisti professionisti. È necessario avere curiosità, rispetto per le culture che si raccontano, e la capacità di trovare i ponti invece dei muri.</p><p>Scrivici: <a href="mailto:collaborazioni@geopoplitica.com" class="btn-link" style="display:inline;padding:4px 10px;">collaborazioni@geopoplitica.com</a></p>`
+  },
+  {
+    id:'iran-kiarostami', paese:'🇮🇷 Iran', categoria:'Culture', sottocategoria:'Cinema', autore:'Alfredo Rossi',
+    titolo:'Il fiore della poesia iraniana',
+    anteprima:'"Dov\'è la casa del mio amico?" (1987) — un bambino, un quaderno, una strada di montagna — celebra qualcosa che non ha bisogno di traduzioni: il senso dell\'amicizia.',
+    testo:`<p>Abbas Kiarostami è uno dei più grandi poeti del cinema mondiale. <em>Dov'è la casa del mio amico?</em> (1987) è un film che si porta dentro senza sforzo.</p><p>Un bambino ha preso per errore il quaderno del compagno di banco. Decide di restituirglielo. La strada è lunga, gli adulti non ascoltano, il sole tramonta.</p><p>Non c'è nessun messaggio politico esplicito. C'è un bambino che vuole bene al suo amico.</p><p><a href="https://youtu.be/5E9ImxdOz7s?is=X2TMFHY0qnOfWMDX" target="_blank" class="btn-link">▶ Guarda su YouTube →</a></p>`
+  },
+  {
+    id:'russia-moda', paese:'🇷🇺 Russia', categoria:'Estetiche', sottocategoria:'Sottoculture', autore:'Beppe Baci',
+    titolo:'La moda russa sotto embargo: nasce un underground estetico',
+    anteprima:'Senza Chanel, senza Zara. Come il lusso proibito ha generato una scena fashion clandestina e ferocemente creativa.',
+    testo:`<p>Quando i grandi marchi occidentali hanno chiuso i battenti in Russia, qualcosa di inaspettato è successo: non il vuoto, ma la creatività.</p><p>Una generazione di stilisti russi ha iniziato a guardare dentro — al folklore, all'avanguardia sovietica, alle nonne dei villaggi.</p>`
+  },
+  {
+    id:'cina-hanfu', paese:'🇨🇳 Cina', categoria:'Estetiche', sottocategoria:'Trend', autore:'Carl Camus',
+    titolo:'Hanfu: il revival del costume antico come soft nationalism',
+    anteprima:'Milioni di giovani cinesi si vestono come l\'antica dinastia Tang. Nostalgia innocente o progetto identitario?',
+    testo:`<p>L'Hanfu — il costume tradizionale delle etnie Han — è diventato un fenomeno di massa. Community online con milioni di iscritti, festival, negozi dedicati.</p>`
+  },
+  {
+    id:'brasile-street-art', paese:'🇧🇷 Brasile', categoria:'Culture', sottocategoria:'Arte', autore:'Beppe Baci',
+    titolo:'Street art ad Avenida Paulista: i muri parlano',
+    anteprima:'Il più grande canvas a cielo aperto del Sudamerica racconta anni di polarizzazione in colori saturi.',
+    testo:`<p>Avenida Paulista è il chilometro più denso del Brasile. E sui suoi muri, la storia recente del paese si racconta in colori acrilici.</p>`
+  },
+  {
+    id:'ucraina-eurovision', paese:'🇺🇦 Ucraina', categoria:'Culture', sottocategoria:'Musica', autore:'Carl Camus',
+    titolo:'Eurovision come campo di battaglia simbolico',
+    anteprima:'Kalush Orchestra non era un\'eccezione. Come il pop ucraino è diventato il vettore più potente di cultura dal 2022.',
+    testo:`<p>Nel maggio 2022, la Kalush Orchestra saliva sul palco di Eurovision con un mix di hip-hop e musica folk ucraina. Vincevano con un margine storico.</p><p>La cultura non aspetta la pace per esistere. Spesso è esattamente il contrario.</p>`
+  },
+  {
+    id:'venezuela-caracas-reportage', paese:'🇻🇪 Venezuela', categoria:'Visioni', sottocategoria:'Reportage', autore:'Beppe Baci',
+    titolo:'Caracas non dorme. Nemmeno la sua musica.',
+    anteprima:'Un viaggio tra i barrios della capitale venezuelana alla ricerca di quello che nessun telegiornale racconta: la bellezza ostinata di una cultura che non si è mai fermata.',
+    testo:`
+<div class="reportage">
+
+<p class="art-occhiello">Un viaggio tra i barrios della capitale venezuelana alla ricerca di quello che nessun telegiornale racconta: la bellezza ostinata di una cultura che non si è mai fermata.</p>
+
+<div class="r-section-title">I. L'arrivo</div>
+
+<p>L'aereo atterra a Maiquetía alle tre di pomeriggio, quando il caldo è già una presenza fisica. L'aeroporto Simon Bolívar è un brulichio di carrelli, valigie tirate con lo spago, bambini che dormono sulle spalle dei padri. Fuori, Caracas aspetta in fondo alla montagna.</p>
+
+<div class="r-foto-dx">
+  <div class="r-testo">
+    <p>La strada che scende verso la città è una delle più cinematografiche del continente — tunnel, curve cieche, il mare azzurro che scompare alle spalle mentre davanti emergono i blocchi grigi del barrio La Vega, abbarbicati alla collina come se la gravità fosse solo un consiglio.</p>
+    <p>Il mio taxista si chiama Ramón. Guida da trent'anni. "Caracas è come un bolero," dice, "devi conoscerne il ritmo o ti perdi."</p>
+  </div>
+  <div class="r-foto-col">
+    <div class="r-foto-placeholder r-fp-caldo">foto: ramón al volante, caracas attraverso il finestrino</div>
+    <div class="r-foto-caption"><span>Ramón, tassista da trent'anni.</span><span>Foto: B. Baci</span></div>
+  </div>
+</div>
+
+<div class="r-section-title">II. Il Sistema</div>
+
+<div class="r-nota-margine">
+  <span class="r-nota-label">Da sapere</span>
+  <p>El Sistema fu fondato nel 1975 da José Antonio Abreu con undici bambini in un garage. Oggi conta oltre 400.000 allievi in tutto il Venezuela.</p>
+</div>
+
+<p>Ogni venezolano lo conosce. Il Sistema — il programma di orchestre giovanili fondato da José Antonio Abreu nel 1975 — è probabilmente la più grande storia di riscatto culturale del Novecento. Trecentomila bambini, centinaia di orchestre, sparsi in tutto il paese. Gustavo Dudamel è il suo figlio più famoso.</p>
+<p>Ma quello che i giornali non raccontano è che il Sistema non si è mai fermato. Neanche durante le crisi più dure, neanche quando gli stipendi degli insegnanti valevano meno di un caffè.</p>
+
+<div class="r-pullquote">
+  <p>Non suoniamo perché le cose vanno bene. Suoniamo perché le cose devono andare bene.</p>
+  <cite>— Maestro Luis Rodrigo, nucleo di Petare</cite>
+</div>
+
+<div class="r-foto-sx">
+  <div class="r-foto-col">
+    <div class="r-foto-placeholder r-fp-scuro">foto: sala prove petare — bambini con violini</div>
+    <div class="r-foto-caption"><span>Nucleo di Petare, sala prove.</span><span>Foto: B. Baci</span></div>
+  </div>
+  <div class="r-testo">
+    <p>María José ha dodici anni e suona la viola nell'orchestra del nucleo di Petare — il barrio più grande di Caracas. Me la presentano in una sala prove che odora di umidità e resina.</p>
+    <p>Fuori, la città rumoreggia. Dentro, lei suona uno studio di Bartók con una concentrazione che fa quasi paura.</p>
+  </div>
+</div>
+
+<div class="r-section-title">III. Salsa, joropo e trap</div>
+
+<p>La notte a Caracas ha una sua logica. Il centro storico si svuota presto, ma i barrios si animano dopo le dieci. In una plaza di Chacao, un sound system spara reggaeton a volume industriale. A cento metri, una band suona joropo con un basso elettrico e una drum machine.</p>
+
+<div class="r-foto-feature">
+  <div class="r-foto-placeholder r-fp-scuro" style="height:340px">foto: sessione notturna a chacao — musicisti, luci, movimento</div>
+  <div class="r-foto-overlay">
+    <div class="r-overlay-title">La notte di Chacao: il joropo incontra l'elettronica</div>
+    <div class="r-overlay-caption"><span>Plaza Altamira, Chacao. Ore 23:00.</span><span>Foto: B. Baci</span></div>
+  </div>
+</div>
+
+<p>Questa è la cosa che stupisce di Caracas: non la crisi, che è reale e devastante, ma la capacità di tenere insieme mondi che altrove starebbero a distanza siderale. La tradizione e il moderno. Il colto e il popolare. Il lutto e la festa.</p>
+
+<div class="r-section-title">IV. I murales di Caracas</div>
+
+<div class="r-foto-doppia">
+  <div class="r-foto-item">
+    <div class="r-foto-placeholder r-fp-verde" style="height:200px">foto: murale di san agustín</div>
+    <div class="r-foto-caption"><span>Murale di San Agustín. Autore anonimo.</span><span>B. Baci</span></div>
+  </div>
+  <div class="r-foto-item">
+    <div class="r-foto-placeholder r-fp-caldo" style="height:200px">foto: dettaglio murale — volti e mani</div>
+    <div class="r-foto-caption"><span>Dettaglio. Pennellate larghe, colori saturi.</span><span>B. Baci</span></div>
+  </div>
+</div>
+
+<p>In un vicolo di San Agustín, un murale lungo venti metri raffigura una festa: tamburi, danza, cibo, bambini che corrono. È bello in modo disarmante. Chi l'ha dipinto non ha lasciato il nome. Non importa — il quartiere è il suo nome.</p>
+
+<div class="r-section-title">V. La partenza</div>
+
+<div class="r-foto-dx">
+  <div class="r-testo">
+    <p>Quando riparto, all'alba, la città è già sveglia. Un fruttivendolo sistema le sue manghe in piramide perfetta. Dalla finestra aperta di un palazzo, qualcuno suona la tromba.</p>
+    <p>Non so se suona per mestiere, per gioia, per abitudine o per necessità. Probabilmente tutte e quattro le cose insieme.</p>
+    <p>Caracas non dorme. E la sua musica nemmeno.</p>
+  </div>
+  <div class="r-foto-col">
+    <div class="r-foto-placeholder r-fp-cielo" style="height:220px">foto: alba su caracas — fruttivendolo, luce bassa</div>
+    <div class="r-foto-caption"><span>Alba su Caracas. Ore 5:40.</span><span>Foto: B. Baci</span></div>
+  </div>
+</div>
+
+</div>`
+  }
+];
+
+const ICONE = {'n1-editoriale':'🌍','cercasi-collaboratori':'🌍','iran-kiarostami':'🇮🇷','russia-moda':'🇷🇺','cina-hanfu':'🇨🇳','brasile-street-art':'🇧🇷','ucraina-eurovision':'🇺🇦','venezuela-caracas-reportage':'🇻🇪'};
+const CAT_COLORE = {'Culture':'red','Estetiche':'cyan','Redazione':'gold','Identità Umane':'gold','Visioni':'pink'};
+
+let _storiaArticolo = null;
+
+function renderGrid(filtro, scrollToGrid) {
+  const grid = document.getElementById('card-grid');
+  const lista = filtro === 'Tutti'
+    ? ARTICOLI_N1.filter(a => a.categoria !== 'Redazione')
+    : ARTICOLI_N1.filter(a => a.categoria === filtro);
+
+  if (lista.length === 0) {
+    grid.innerHTML = `<div class="empty-state">Nessun articolo disponibile in questa sezione</div>`;
+  } else {
+    grid.innerHTML = lista.map(a => `
+      <article class="card" onclick="apriArticolo('${a.id}')">
+        <div class="card-icon">${ICONE[a.id]||'🌍'}</div>
+        <div class="card-tags">
+          <span class="tag ${CAT_COLORE[a.categoria]||''}">${a.categoria}</span>
+          <span class="tag-sub">${a.sottocategoria||''}</span>
+        </div>
+        <h3>${a.titolo}</h3>
+        <p>${a.anteprima}</p>
+        <span class="card-autore">— ${a.autore||''}</span>
+        <span class="card-link">Leggi →</span>
+      </article>`).join('');
+  }
+  if (scrollToGrid) {
+    setTimeout(() => grid.scrollIntoView({behavior:'smooth',block:'start'}), 50);
+  }
+}
+
+function filtra(categoria, el) {
+  document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderGrid(categoria, true);
+}
+
+function apriArticolo(id) {
+  const a = ARTICOLI_N1.find(x => x.id === id);
+  if (!a) return;
+  _storiaArticolo = id;
+  const colore = CAT_COLORE[a.categoria] || '';
+  // Map autore name to id for main site link
+  const autoreId = {
+    'Alfredo Rossi': 'alfredo-rossi',
+    'Beppe Baci':    'beppe-baci',
+    'Carl Camus':    'carl-camus',
+    'La Redazione':  null
+  }[a.autore];
+  const autoreHTML = a.autore
+    ? `<div style="margin-top:32px"><hr class="articolo-divider">
+       <span class="firma-label">Scritto da</span>
+       ${autoreId
+         ? `<a href="../../index.html?persone=${autoreId}" style="font-size:11px;color:var(--accent);margin-left:8px;border-bottom:1px solid var(--accent);text-decoration:none">${a.autore}</a>`
+         : `<span style="font-size:11px;color:var(--accent);margin-left:8px">${a.autore}</span>`
+       }
+       </div>`
+    : '';
+  document.getElementById('articolo-contenuto').innerHTML = `
+    <div class="articolo-back" onclick="chiudiArticolo()">← Indietro</div>
+    <div class="articolo-meta">
+      <span class="tag ${colore}">${a.categoria}</span>
+      <span class="tag-sub">${a.sottocategoria||''}</span>
+      <span class="articolo-paese-label">${a.paese} — N°1 Aprile 2026</span>
+    </div>
+    <h1 class="articolo-titolo">${a.titolo}</h1>
+    <hr class="articolo-divider">
+    <div class="articolo-body">${a.testo}</div>
+    ${autoreHTML}
+  `;
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-articolo').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function chiudiArticolo() {
+  document.getElementById('page-articolo').style.display = 'none';
+  document.getElementById('page-home').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+renderGrid('Tutti', false);
+</script>
+</body>
+</html>
