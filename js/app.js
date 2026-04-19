@@ -558,14 +558,33 @@ function renderChiSiamo() {
   const wrap = document.getElementById('chisiamo-contenuto');
   wrap.innerHTML = `
     <div class="archivio-wrap">
-      <div class="archivio-titolo">Chi Siamo</div>
-      <div class="archivio-sub">La storia, la missione e la visione di Geo-POPlitica</div>
-      <div style="max-width:720px;font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.9;color:var(--ink)">
-        <p style="margin-bottom:20px"><em>Questo spazio è riservato alla vostra presentazione.</em></p>
-        <p style="margin-bottom:20px;opacity:0.5;font-size:0.95rem">Qui potrete inserire la storia della rivista, le motivazioni che vi hanno spinto a crearla, la vostra visione del mondo e del giornalismo culturale. Un testo che racconti chi siete prima ancora di raccontare il mondo.</p>
-        <p style="margin-bottom:20px;opacity:0.5;font-size:0.95rem">Quando sarete pronti, mandatemi il testo e lo inserisco con la formattazione adatta.</p>
-      </div>
-    </div>`;
+  <div class="archivio-titolo">Chi Siamo</div>
+  <div style="max-width:720px;font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.9;color:var(--ink)">
+
+    <p style="margin-bottom:20px">Siamo persone consapevoli che la geopolitica studia i rapporti di forza tra gli Stati; che la cultura dei popoli può essere letta per decifrare le mosse sulla scacchiera del potere.</p>
+
+    <p style="margin-bottom:20px">Siamo informati, aggiornati, accerchiati da dati e notizie. Abitiamo le contraddizioni del nostro essere umani, e spesso ci troviamo in interminabili dibattiti sulle sorti del mondo. Alla fine, esausti, ce ne torniamo a casa, ben sapendo che non risparmieremo critiche nemmeno a noi stessi.</p>
+
+    <p style="margin-bottom:20px">La Geo-POPlitica nasce da questa saturazione, dalla sofferenza verso un racconto del mondo fatto di continue crisi, numeri e strumenti di forza; dalla necessità di trovare un modo per disarmare lo sguardo ed invertire la domanda: da <em>"chi comanda qui?"</em> a <em>"come abita l'umano questo luogo geografico?"</em>, <em>"come lo abito io?"</em>. Un modo per darsi tregua, per decostruire il nemico spostando il campo di battaglia al palcoscenico della vita.</p>
+
+    <p style="margin-bottom:32px">Non ignoriamo l'attualità, ma la seguiamo per cercare ponti culturali da attraversare, linguaggi universali; non evitiamo la complessità, ma rivendichiamo il nostro costante desiderio di osservare e vivere il mondo, gli stili, le tradizioni, la quotidianità.</p>
+
+    <p style="margin-bottom:8px">Siamo i mercati di Dakar e le spezie di Istanbul;</p>
+    <p style="margin-bottom:8px">Siamo l'architettura brutalista di Belgrado, i riad di Fes;</p>
+    <p style="margin-bottom:8px">Siamo Rimbaud, Ingeborg Bachmann, Mahmoud Darwish;</p>
+    <p style="margin-bottom:8px">Siamo i miti greci e la medicina tradizionale cinese;</p>
+    <p style="margin-bottom:8px">Siamo la Danza dei Dervisci Rotanti, il tango argentino;</p>
+    <p style="margin-bottom:8px">Siamo il city pop giapponese e il bubble tea taiwanese;</p>
+    <p style="margin-bottom:8px">Siamo Miriam Makeba, le playlist nelle chiavette USB di Teheran, i clacson di Delhi;</p>
+    <p style="margin-bottom:8px">Siamo sia l'assenza nei quadri di Hopper che il vuoto nella pittura orientale;</p>
+    <p style="margin-bottom:8px">Siamo Bollywood e Tarkovskij;</p>
+    <p style="margin-bottom:8px">Siamo felicemente a spasso per negozi di dischi;</p>
+    <p style="margin-bottom:32px">Siamo la grotta di Chauvet e il graffiti writing di New York.</p>
+
+    <p style="font-weight:700">Siamo Persone che guardano Persone.</p>
+
+  </div>
+</div>`;
   mostraPagina('page-chisiamo');
 }
 
