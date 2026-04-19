@@ -534,7 +534,6 @@ function renderContatti() {
   document.getElementById('contatti-contenuto').innerHTML = `
     <div class="archivio-wrap">
       <div class="archivio-titolo">Contatti</div>
-      <div class="archivio-sub">Scrivici — rispondiamo a tutti</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:800px;margin-top:8px">
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.05em;margin-bottom:12px;color:var(--ink)">Informazioni Generali</div>
@@ -543,7 +542,7 @@ function renderContatti() {
         </div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.05em;margin-bottom:12px;color:var(--ink)">Collaborazioni</div>
-          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Scrivi, fotografa, disegna, viaggi? Siamo sempre alla ricerca di persone con uno sguardo originale da ogni angolo del mondo.</p>
+          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Scrivi, fotografi, disegni, viaggi? Geo-POPlitica è un progetto aperto — parlaci di te e mostraci qualcosa di quello che fai. Per ora collaboriamo solo per passione e non per compenso, ma ci teniamo a farlo bene. Siamo alla ricerca di persone curiose da ogni <em>checkpoint</em> del mondo.</p>
           <a href="mailto:collaborazioni@geo-poplitica.com" style="display:inline-block;background:var(--accent);color:white;padding:10px 20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--ink)'" onmouseout="this.style.background='var(--accent)'">collaborazioni@geo-poplitica.com</a>
         </div>
       </div>
