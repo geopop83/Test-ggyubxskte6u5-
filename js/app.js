@@ -563,7 +563,7 @@ function renderChiSiamo() {
 
     <p style="margin-bottom:20px">Siamo persone consapevoli che la geopolitica studia i rapporti di forza tra gli Stati; che la cultura dei popoli può essere letta per decifrare le mosse sulla scacchiera del potere.</p>
 
-    <p style="margin-bottom:20px">Siamo informati, aggiornati, accerchiati da dati e notizie. Abitiamo le contraddizioni del nostro essere umani, e spesso ci troviamo in interminabili dibattiti sulle sorti del mondo. Alla fine, esausti, ce ne torniamo a casa, ben sapendo che non risparmieremo critiche nemmeno a noi stessi.</p>
+    <p style="margin-bottom:20px">Siamo informati, aggiornati, accerchiati da dati e notizie. Abitiamo le contraddizioni del nostro essere umani, e spesso ci ritroviamo in interminabili discussioni sulle sorti del mondo. Alla fine, esausti, ce ne torniamo a casa, ben sapendo che non risparmieremo critiche nemmeno a noi stessi.</p>
 
     <p style="margin-bottom:20px">La Geo-POPlitica nasce da questa saturazione, dalla sofferenza verso un racconto del mondo fatto di continue crisi, numeri e strumenti di forza; dalla necessità di trovare un modo per disarmare lo sguardo ed invertire la domanda: da <em>"chi comanda qui?"</em> a <em>"come abita l'umano questo luogo geografico?"</em>, <em>"come lo abito io?"</em>. Un modo per darsi tregua, per decostruire il nemico spostando il campo di battaglia al palcoscenico della vita.</p>
 
