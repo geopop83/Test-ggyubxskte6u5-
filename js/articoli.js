@@ -73,7 +73,7 @@ const TEMI = {
 // ══════════════════════════════════════════════════════
 const MANIFESTO_HTML = `
   <p><strong>Oltre la mappa dei poteri:</strong> Non guardiamo ai confini come linee di divisione, ma come punti di osservazione. Non ci occupiamo di cronaca dei conflitti, ma di <em>checkpoint</em> culturali.</p>
-  <p><strong><s>Soft</s> Solo Power:</strong> Agli Stati la seduzione strategica, a noi l'eros della scoperta. Uno sguardo attento e curioso sui colpi di genio e i destini comuni: che sia un film d'autore o un mero trend globale, è lì che le persone si riconoscono e si incontrano.</p>
+  <p><strong><s>Soft</s> Solo Power:</strong> Agli Stati la seduzione strategica, a noi l'eros della scoperta. Uno sguardo attento e curioso su colpi di genio e destini comuni: che sia un film d'autore o un mero trend globale, è lì che le persone si riconoscono e si incontrano.</p>
   <p><strong>Il dato an/altropologico:</strong> Non cerchiamo nei popoli <em>il motore della forza</em>; ci appassiona l'energia creativa, la radice comune e le sue ramificazioni.</p>
   <p><strong>La Geo-POPlitica è POP!</strong> Popolare, appartiene ai popoli. È <em>naïf</em>, <em>d'essai</em>, talvolta clandestina. Vogliamo farla emergere, celebrarla.</p>
 `;
