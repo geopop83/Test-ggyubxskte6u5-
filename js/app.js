@@ -542,8 +542,8 @@ function renderContatti() {
         </div>
         <div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.05em;margin-bottom:12px;color:var(--ink)">Collaborazioni</div>
-          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Scrivi, fotografi, disegni, viaggi? Geo-POPlitica è un progetto aperto, parlaci di te e mostraci qualcosa di quello che fai. Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Siamo alla ricerca di persone curiose da ogni angolo del mondo.</p>
-          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se il vostro sguardo incontra il nostro, vi contatteremo.</p>
+          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Scrivi, fotografi, disegni, viaggi? Geo-POPlitica è un progetto aperto, parlaci di te e mostraci qualcosa di quello che fai tramite un link al tuo sito, blog o account social pubblico (non usare allegati). Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Siamo alla ricerca di persone curiose da ogni angolo del mondo.</p>
+          <p style="font-family:'Playfair Display',serif;font-size:1rem;line-height:1.8;color:var(--ink);opacity:0.75;margin-bottom:16px">Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se il tuo sguardo incontra il nostro, ti contatteremo.</p>
           <a href="mailto:collaborazioni@geo-poplitica.com" style="display:inline-block;background:var(--accent);color:white;padding:10px 20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--ink)'" onmouseout="this.style.background='var(--accent)'">collaborazioni@geo-poplitica.com</a>
         </div>
       </div>
