@@ -238,7 +238,7 @@ function renderHome(pushState = true) {
         <div class="prev-numero-info">
           <span class="tag gold">Redazione</span>
           <p class="prev-titolo">${editorialePrecedente ? editorialePrecedente.titolo : ''}</p>
-          <p>${editorialePrecedente ? editorialePrecedente.anteprima.substring(0, 120) + '...' : ''}</p>
+          <p>${editorialePrecedente ? editorialePrecedente.anteprima : ''}</p>
         </div>
       </div>`;
   } else {
