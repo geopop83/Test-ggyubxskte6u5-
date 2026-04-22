@@ -250,6 +250,7 @@ function renderHome(pushState = true) {
           <span class="tag gold">Redazione</span>
           <h3>${speciale.titolo}</h3>
           <p>${speciale.anteprima}</p>
+          <span class="card-link">Leggi →</span>
         </div>`;
     }
   }
