@@ -162,7 +162,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'alfredo-rossi',
         titolo: 'Il fiore della poesia iraniana',
         anteprima: 'Abbas Kiarostami è uno dei più grandi poeti del cinema mondiale. "Dov\'è la casa del mio amico?" (1987) — un bambino, un quaderno, una strada di montagna — celebra qualcosa che non ha bisogno di traduzioni: il senso dell\'amicizia.',
-        testo: `<p>Abbas Kiarostami è uno dei più grandi poeti del cinema mondiale. <em>Dov'è la casa del mio amico?</em> (1987) è un film che si porta dentro senza sforzo.</p>
+        testo: `<p class="art-occhiello">Abbas Kiarostami è uno dei più grandi poeti del cinema mondiale. &quot;Dov'è la casa del mio amico?&quot; (1987) — un bambino, un quaderno, una strada di montagna — celebra qualcosa che non ha bisogno di traduzioni: il senso dell'amicizia.</p>
+<p>Abbas Kiarostami è uno dei più grandi poeti del cinema mondiale. <em>Dov'è la casa del mio amico?</em> (1987) è un film che si porta dentro senza sforzo.</p>
 <p>Un bambino ha preso per errore il quaderno del compagno di banco. Sa che se l'altro si presenta a scuola senza quaderno verrà bocciato. Decide di restituirglielo. La strada è lunga, gli adulti non ascoltano, il sole tramonta.</p>
 <p>Non c'è nessun messaggio politico esplicito. C'è un bambino che vuole bene al suo amico. È quella semplicità che commuove — e che non ha bisogno di traduzioni.</p>
 <p>Kiarostami appartiene alla grande tradizione poetica iraniana — quella di Hafez, di Rumi, di Sa'di — trasportata sullo schermo con una leggerezza che sembra facile e non lo è per niente.</p>
@@ -178,7 +179,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'beppe-baci',
         titolo: 'La moda russa sotto embargo: nasce un underground estetico',
         anteprima: 'Senza Chanel, senza Zara. Come il lusso proibito ha generato una scena fashion clandestina e ferocemente creativa.',
-        testo: `<p>Quando i grandi marchi occidentali hanno chiuso i battenti in Russia, qualcosa di inaspettato è successo: non il vuoto, ma la creatività.</p>
+        testo: `<p class="art-occhiello">Senza Chanel, senza Zara. Come il lusso proibito ha generato una scena fashion clandestina e ferocemente creativa.</p>
+<p>Quando i grandi marchi occidentali hanno chiuso i battenti in Russia, qualcosa di inaspettato è successo: non il vuoto, ma la creatività.</p>
 <p>Una generazione di stilisti russi, costretta a reinventarsi senza riferimenti internazionali, ha iniziato a guardare dentro — al folklore, all'avanguardia sovietica, alle nonne dei villaggi.</p>
 <p>Il risultato è una scena fashion clandestina, distribuita via Telegram, venduta in appartamenti privati, fotografata in cortili di Mosca e San Pietroburgo. Nessun negozio. Nessuna sfilata ufficiale. Solo il passaparola e un'estetica feroce.</p>
 <p>È pop nel senso più vero del termine — appartiene al popolo, nasce dalla strada, non chiede permesso.</p>`,
@@ -192,7 +194,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'carl-camus',
         titolo: 'Hanfu: il revival del costume antico come soft nationalism',
         anteprima: 'Milioni di giovani cinesi si vestono come l\'antica dinastia Tang. Nostalgia innocente o progetto identitario?',
-        testo: `<p>Nelle strade di Chengdu, Xi'an, Pechino, sempre più spesso si vedono ragazze con abiti di seta ricamata, maniche ampie, acconciature elaborate. Non sono figuranti di un museo — sono TikToker, studenti universitari, impiegati nel giorno libero.</p>
+        testo: `<p class="art-occhiello">Milioni di giovani cinesi si vestono come l'antica dinastia Tang. Nostalgia innocente o progetto identitario?</p>
+<p>Nelle strade di Chengdu, Xi'an, Pechino, sempre più spesso si vedono ragazze con abiti di seta ricamata, maniche ampie, acconciature elaborate. Non sono figuranti di un museo — sono TikToker, studenti universitari, impiegati nel giorno libero.</p>
 <p>L'Hanfu — il costume tradizionale delle etnie Han — è diventato un fenomeno di massa. Community online con milioni di iscritti, festival, negozi dedicati, tutorial di make-up in stile Tang.</p>
 <p>Quello che emerge — e che ci interessa — è qualcosa di genuinamente pop — milioni di persone che si riconoscono in un'estetica comune.</p>`,
         immagine: null
@@ -205,7 +208,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'beppe-baci',
         titolo: 'Street art ad Avenida Paulista: i muri parlano',
         anteprima: 'Il più grande canvas a cielo aperto del Sudamerica racconta anni di polarizzazione in colori saturi.',
-        testo: `<p>Avenida Paulista è il chilometro più denso del Brasile — banche, musei, manifestazioni, McDonald's, tutto insieme. E sui suoi muri, la storia recente del paese si racconta in colori acrilici.</p>
+        testo: `<p class="art-occhiello">Il più grande canvas a cielo aperto del Sudamerica racconta anni di polarizzazione in colori saturi.</p>
+<p>Avenida Paulista è il chilometro più denso del Brasile — banche, musei, manifestazioni, McDonald's, tutto insieme. E sui suoi muri, la storia recente del paese si racconta in colori acrilici.</p>
 <p>I graffiti brasiliani non sono decorazione — sono archivio. Ogni strato di pittura copre il precedente ma non lo cancella del tutto.</p>
 <p>Il Brasile ha moltissimo da dire.</p>`,
         immagine: null
@@ -218,7 +222,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'carl-camus',
         titolo: 'Eurovision come campo di battaglia simbolico',
         anteprima: 'Kalush Orchestra non era un\'eccezione. Come il pop ucraino è diventato il vettore più potente di cultura dal 2022.',
-        testo: `<p>Nel maggio 2022, tre mesi dopo l'inizio dell'invasione su larga scala, la Kalush Orchestra saliva sul palco di Eurovision con un mix di hip-hop e musica folk ucraina. Vincevano con un margine storico.</p>
+        testo: `<p class="art-occhiello">Kalush Orchestra non era un'eccezione. Come il pop ucraino è diventato il vettore più potente di cultura dal 2022.</p>
+<p>Nel maggio 2022, tre mesi dopo l'inizio dell'invasione su larga scala, la Kalush Orchestra saliva sul palco di Eurovision con un mix di hip-hop e musica folk ucraina. Vincevano con un margine storico.</p>
 <p>Da allora il fenomeno non si è fermato. Artisti ucraini cantano in ucraino dove prima cantavano in russo. La lingua è diventata atto culturale prima ancora che politico.</p>
 <p>La cultura non aspetta la pace per esistere. Spesso è esattamente il contrario.</p>`,
         immagine: null
@@ -353,7 +358,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'la-redazione',
         titolo: 'La stessa radice. Due fiori diversissimi.',
         anteprima: 'Questo numero esplora Cina e Taiwan: due culture che condividono la stessa origine e l\'hanno fatta fiorire in direzioni opposte. Non chi ha ragione — ma cosa ha prodotto questa tensione in termini di arte, musica, identità.',
-        testo: `<p>Due caratteri. Una linea di mezzo. Un punto di luce al centro.</p>
+        testo: `<p class="art-occhiello">Cina e Taiwan: due culture che condividono la stessa origine e l'hanno fatta fiorire in direzioni opposte. Non chi ha ragione — ma cosa ha prodotto questa tensione.</p>
+<p>Due caratteri. Una linea di mezzo. Un punto di luce al centro.</p>
 <p>中 — Zhōng. Il carattere della Cina. Letteralmente "paese di mezzo", "terra centrale". Un nome che dice tutto su come una civiltà vede se stessa nel mondo.</p>
 <p>台 — Tái. L'abbreviazione di Taiwan, 台灣. Due sillabe che contengono decenni di storia non risolta.</p>
 <p>Questo numero non prende posizione su quella storia. La usa come fonte di luce — esattamente come facciamo sempre — per far emergere quello che esiste da sempre, indipendentemente da chi governa e da quali confini tracciano le mappe: la creatività, la bellezza, l'identità di due culture che condividono una radice e l'hanno fatta fiorire in direzioni diversissime.</p>
@@ -370,7 +376,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'carl-camus',
         titolo: 'Taipei indie: la scena che il continente non può copiare',
         anteprima: 'Piccoli club, testi in taiwanese, nessun algoritmo di stato. La musica indipendente di Taipei è forse la più libera dell\'Asia orientale.',
-        testo: `<p>Taipei ha una scena musicale indie che non somiglia a nessun'altra in Asia. Piccoli club nel distretto di Da'an, etichette indipendenti, testi in taiwanese.</p>
+        testo: `<p class="art-occhiello">Piccoli club, testi in taiwanese, nessun algoritmo di stato. La musica indipendente di Taipei è forse la più libera dell'Asia orientale.</p>
+<p>Taipei ha una scena musicale indie che non somiglia a nessun'altra in Asia. Piccoli club nel distretto di Da'an, etichette indipendenti, testi in taiwanese.</p>
 <p>La libertà qui non è una posa. È strutturale. E si sente in ogni canzone.</p>`,
         immagine: null
       },
@@ -382,7 +389,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'carl-camus',
         titolo: 'Hanfu: il costume antico come identità pop',
         anteprima: 'Milioni di giovani cinesi si vestono come l\'antica dinastia Tang. Quello che emerge è genuinamente pop — un\'estetica comune che attraversa tutta una generazione.',
-        testo: `<p>Il fenomeno Hanfu non si ferma. Cresce, si ramifica, si globalizza. Su TikTok i video in costume Tang raccolgono decine di milioni di visualizzazioni.</p>
+        testo: `<p class="art-occhiello">Milioni di giovani cinesi si vestono come l'antica dinastia Tang. Quello che emerge è genuinamente pop — un'estetica comune che attraversa tutta una generazione.</p>
+<p>Il fenomeno Hanfu non si ferma. Cresce, si ramifica, si globalizza. Su TikTok i video in costume Tang raccolgono decine di milioni di visualizzazioni.</p>
 <p>Quello che ci interessa non è la dimensione politica — è l'energia creativa. Milioni di persone che cercano un'estetica in cui riconoscersi. È pop nel senso più puro.</p>`,
         immagine: null
       },
@@ -394,7 +402,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'beppe-baci',
         titolo: 'Il rap censurato di Pechino: esiste e resiste',
         anteprima: 'Distribuito via WeChat, venduto in chiavette USB. La scena hip-hop cinese underground è viva, feroce, e non chiede permesso.',
-        testo: `<p>Esiste una scena rap cinese che non vedrete mai su Douyin. Si distribuisce via WeChat, si vende in chiavette USB fuori dai concerti.</p>
+        testo: `<p class="art-occhiello">Distribuito via WeChat, venduto in chiavette USB. La scena hip-hop cinese underground è viva, feroce, e non chiede permesso.</p>
+<p>Esiste una scena rap cinese che non vedrete mai su Douyin. Si distribuisce via WeChat, si vende in chiavette USB fuori dai concerti.</p>
 <p>È clandestina non per scelta romantica ma per necessità. E proprio per questo è tra le più interessanti del mondo.</p>`,
         immagine: null
       },
@@ -406,7 +415,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'alfredo-rossi',
         titolo: 'Edward Yang e la malinconia di Taipei',
         anteprima: 'Yi Yi (2000) — tre generazioni, una città che cambia, la domanda più semplice del mondo: perché siamo qui?',
-        testo: `<p><em>Yi Yi</em> dura quasi tre ore. Non ne senti una. Edward Yang ti porta dentro una famiglia di Taipei negli anni '90 con una delicatezza che non dimentichi.</p>
+        testo: `<p class="art-occhiello">Yi Yi (2000) — tre generazioni, una città che cambia, la domanda più semplice del mondo: perché siamo qui?</p>
+<p><em>Yi Yi</em> dura quasi tre ore. Non ne senti una. Edward Yang ti porta dentro una famiglia di Taipei negli anni '90 con una delicatezza che non dimentichi.</p>
 <p>Il bambino della famiglia, Yang-Yang, fotografa la nuca delle persone. Vuole mostrar loro quello che non riescono a vedere da soli. È la definizione più bella che conosca di cosa fa il cinema.</p>`,
         immagine: null
       },
@@ -418,7 +428,8 @@ Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto c
         autore: 'alfredo-rossi',
         titolo: 'Bubble tea: come una bevanda diventa cultura globale',
         anteprima: 'Nata a Taipei negli anni \'80, oggi è ovunque. Il bubble tea è forse il più riuscito caso di soft power involontario della storia recente.',
-        testo: `<p>Nessuno ha pianificato il successo globale del bubble tea. È partito da un mercato di Taichung negli anni '80, è diventato il simbolo di una generazione, poi di un'intera cultura.</p>
+        testo: `<p class="art-occhiello">Nata a Taipei negli anni '80, oggi è ovunque. Il bubble tea è forse il più riuscito caso di soft power involontario della storia recente.</p>
+<p>Nessuno ha pianificato il successo globale del bubble tea. È partito da un mercato di Taichung negli anni '80, è diventato il simbolo di una generazione, poi di un'intera cultura.</p>
 <p>Oggi ci sono più bubble tea shop che McDonald's in molte città europee. È pop nel senso più letterale.</p>`,
         immagine: null
       }
