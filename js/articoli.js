@@ -139,7 +139,7 @@ Ritratti d'autore, monografie, interviste: chi i luoghi li abita, li sogna e ci 
 
 <p><strong>3. Estetiche: lo stile della strada.</strong><br>
 Il "gusto" di un'epoca, il trend del momento, le forme che verranno.<br>
-Sei immerso nel ritorno dei vestiti tradizionali in Cina? Hai catalogato il packaging dei 7-Eleven in Giappone?</p>
+Sei affascinato dal ritorno dei vestiti tradizionali in Cina? Hai catalogato il packaging dei 7-Eleven in Giappone?</p>
 
 <p><strong>4. Visioni dal Mondo: lo sguardo e il luogo.</strong><br>
 Racconti, reportage fotografici, diari di viaggio, vite da <em>expat</em>, atmosfere dal mondo. Puoi mescolare i generi ed essere soggettivo.</p>
