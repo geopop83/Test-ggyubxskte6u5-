@@ -566,7 +566,7 @@ function renderChiSiamo() {
 
     <p style="margin-bottom:20px">Siamo informati, aggiornati, accerchiati da dati e notizie. Abitiamo l'ambiguità dei tempi e le contraddizioni del nostro essere umani, e così finiamo per ritrovarci in interminabili discussioni sulle sorti del mondo. Alla fine, esausti, ce ne torniamo a casa, ben sapendo che non risparmieremo critiche nemmeno a noi stessi.</p>
 
-    <p style="margin-bottom:20px">La Geo-POPlitica nasce da questa saturazione, dalla sofferenza verso un racconto del mondo fatto di continue crisi, numeri e strumenti di forza; dalla necessità di trovare un modo per disarmare lo sguardo ed invertire la domanda: da <em>"chi comanda qui?"</em> a <em>"come abita l'umano questo luogo geografico?"</em>, <em>"come lo abito io?"</em>. Un modo per darsi tregua, per decostruire il nemico spostando il campo di battaglia al palcoscenico della vita.</p>
+    <p style="margin-bottom:20px">La Geo-POPlitica nasce da questa saturazione, dalla sofferenza verso un racconto fatto di continue crisi, numeri e strumenti di forza; dalla necessità di trovare un modo per disarmare lo sguardo ed invertire la domanda: da <em>"chi comanda qui?"</em> a <em>"come abita l'umano questo luogo geografico?"</em>, <em>"come lo abito io?"</em>. Un modo per darsi tregua, per decostruire il nemico spostando il campo di battaglia al palcoscenico della vita.</p>
 
     <p style="margin-bottom:32px">Non ignoriamo l'attualità, ma la seguiamo per cercare ponti culturali da attraversare, linguaggi universali; non evitiamo la complessità, ma rivendichiamo il nostro costante desiderio di osservare e vivere il mondo, gli stili, le tradizioni, la quotidianità.</p>
 
