@@ -142,7 +142,8 @@ Hai visto qualcosa che ti ha colpito (un film, un concerto, una mostra) e sai pe
 Ritratti d'autore, monografie, interviste: chi i luoghi li abita, li sogna e ci lega a loro.</p>
 
 <p><strong>3. Estetiche: lo stile della strada.</strong><br>
-Il "gusto" di un'epoca, il trend del momento, il packaging dei 7-Eleven, le forme che verranno.</p>
+Il "gusto" di un'epoca, il trend del momento, le forme che verranno.<br>
+Sei interessato al ritorno dei vestiti tradizionali in Cina? Hai catalogato il packaging dei 7-Eleven in Giappone?</p>
 
 <p><strong>4. Visioni dal Mondo: lo sguardo e il luogo.</strong><br>
 Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto che conosci bene o che hai appena scoperto. Puoi mescolare i generi ed essere soggettivo.</p>
