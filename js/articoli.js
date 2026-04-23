@@ -142,11 +142,9 @@ Il "gusto" di un'epoca, il trend del momento, le forme che verranno.<br>
 Sei interessato al ritorno dei vestiti tradizionali in Cina? Hai catalogato il packaging dei 7-Eleven in Giappone?</p>
 
 <p><strong>4. Visioni dal Mondo: lo sguardo e il luogo.</strong><br>
-Racconti in prosa, reportage fotografici, atmosfere dal mondo. Puoi mescolare i generi ed essere soggettivo.</p>
+Racconti, reportage fotografici, diari di viaggio, vite da expat, atmosfere dal mondo. Puoi mescolare i generi ed essere soggettivo.</p>
 
-<p><em>Le categorie sono confini che si mescolano tra loro, non sentirti in gabbia.</em></p>
-
-<p>Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se tra di noi è colpo di fulmine, ti contatteremo.</p>
+<p>Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se troviamo il posto giusto per un tuo progetto inedito, ti scriviamo.</p>
 
 <p>Scrivici: <a href="mailto:collaborazioni@geo-poplitica.com" class="btn-link" style="display:inline;padding:4px 10px;">collaborazioni@geo-poplitica.com</a></p>`,
         immagine: null
