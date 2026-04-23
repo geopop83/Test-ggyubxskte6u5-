@@ -130,7 +130,7 @@ const NUMERI = [
 
 <p>Geo-POPlitica nasce come progetto collettivo. Cerchiamo persone che ne condividono l'urgenza e che amano scrivere, fotografare, disegnare, viaggiare e mostrare il proprio sguardo sul mondo.</p>
 
-<p>Parlaci un po' di te, condividi qualcosa di quello che fai tramite un link al tuo sito, blog o account social pubblico (non usare allegati), e facci sapere cosa ti piacerebbe realizzare. C'è un luogo sotto i riflettori dell'attualità che vuoi raccontare dalla tua angolazione?</p>
+<p>Parlaci un po' di te, condividi qualcosa di quello che fai tramite un link al tuo sito, blog o account social pubblico (non usare allegati), e facci sapere cosa ti piacerebbe realizzare. C'è un luogo sotto i riflettori dell'attualità che vorresti raccontare dalla tua angolazione?</p>
 
 <p>Abbiamo quattro aree tematiche tra cui muoverci con comodità. Ad esempio:</p>
 
