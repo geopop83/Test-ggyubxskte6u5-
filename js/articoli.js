@@ -128,23 +128,25 @@ const NUMERI = [
         anteprima: 'Chiamata alle menti, ai sensi, ai cuori.',
         testo: `<p class="art-occhiello">Chiamata alle menti, ai sensi, ai cuori.</p>
 
-<p>Geo-POPlitica nasce come progetto collettivo. Vogliamo creare una rete di persone che ne condividono l'urgenza e hanno voglia di mostrare il proprio sguardo sul mondo.</p>
+<p>Geo-POPlitica nasce come progetto collettivo. Cerchiamo persone che ne condividono l'urgenza e che amano scrivere, fotografare, disegnare, viaggiare e mostrare il proprio sguardo sul mondo.</p>
 
-<p>Parlaci un po' di te, condividi qualcosa di quello che fai tramite un link al tuo sito, blog o account social pubblico (non usare allegati), e raccontaci cosa ti piacerebbe realizzare.</p>
+<p>Parlaci un po' di te, condividi qualcosa di quello che fai tramite un link al tuo sito, blog o account social pubblico (non usare allegati), e facci sapere cosa ti piacerebbe realizzare. C'è un luogo sotto i riflettori dell'attualità che vorresti raccontare dalla tua angolazione?</p>
 
 <p>Abbiamo quattro aree tematiche tra cui muoverci con comodità. Ad esempio:</p>
 
 <p><strong>1. Culture: patrimonio e nuove forme espressive.</strong><br>
-Dall'eredità delle grandi tradizioni artistico-culturali alle scene underground globali. Se hai visto qualcosa che ti ha colpito (un film, un concerto, una mostra) e sai perché conta, questo è il posto giusto.</p>
+Dall'eredità delle grandi tradizioni artistico-culturali alle scene underground globali.<br>
+Hai visto qualcosa che ti ha colpito (un film, un concerto, una mostra) e sai perché conta? Questo è il posto giusto.</p>
 
 <p><strong>2. Identità Umane: il volto.</strong><br>
-Ritratti d'autore, monografie, ma anche interviste. Chi i luoghi li abita, li sogna e ci lega a loro.</p>
+Ritratti d'autore, monografie, interviste: chi i luoghi li abita, li sogna e ci lega a loro.</p>
 
 <p><strong>3. Estetiche: lo stile della strada.</strong><br>
-Il "gusto" di un'epoca, il trend del momento, il packaging dei 7-Eleven, le forme che verranno.</p>
+Il "gusto" di un'epoca, il trend del momento, le forme che verranno.<br>
+Sei interessato al ritorno dei vestiti tradizionali in Cina? Hai catalogato il packaging dei 7-Eleven in Giappone?</p>
 
 <p><strong>4. Visioni dal Mondo: lo sguardo e il luogo.</strong><br>
-Racconti in prosa, reportage fotografici, atmosfere. Puoi portarci in un posto che conosci bene o che hai appena scoperto. Puoi mescolare i generi ed essere soggettivo.</p>
+Racconti in prosa, reportage fotografici, atmosfere dal mondo. Puoi mescolare i generi ed essere soggettivo.</p>
 
 <p><em>Le categorie sono confini che si mescolano tra loro, non sentirti in gabbia.</em></p>
 
