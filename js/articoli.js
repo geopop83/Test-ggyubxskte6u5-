@@ -132,7 +132,7 @@ const NUMERI = [
 
 <p><strong>1. Culture: patrimonio e nuove forme espressive.</strong><br>
 Dall'eredità delle grandi tradizioni artistico-culturali alle scene underground globali.<br>
-Hai visto qualcosa che ti ha colpito (un film, un concerto, una mostra) e sai perché conta? Questo è il posto giusto.</p>
+Hai visto qualcosa che ti ha colpito (un film, un concerto, una mostra) e sai perché conta?</p>
 
 <p><strong>2. Identità Umane: il volto.</strong><br>
 Ritratti d'autore, monografie, interviste: chi i luoghi li abita, li sogna e ci lega a loro.</p>
@@ -144,7 +144,7 @@ Sei affascinato dal ritorno dei vestiti tradizionali in Cina? Hai catalogato il 
 <p><strong>4. Visioni dal Mondo: lo sguardo e il luogo.</strong><br>
 Racconti, reportage fotografici, diari di viaggio, vite da <em>expat</em>, atmosfere dal mondo. Puoi mescolare i generi ed essere soggettivo.</p>
 
-<p>Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se troviamo il posto giusto per un tuo progetto inedito, ti scriviamo.</p>
+<p>Collaboriamo per passione e non per compenso, ma ci teniamo a farlo bene. Ci prendiamo il tempo di leggere tutto quello che riceviamo. Se sentiamo di avere il posto giusto per un tuo progetto inedito, ti scriviamo.</p>
 
 <p>Scrivici: <a href="mailto:collaborazioni@geo-poplitica.com" class="btn-link" style="display:inline;padding:4px 10px;">collaborazioni@geo-poplitica.com</a></p>`,
         immagine: null
